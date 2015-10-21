@@ -1,0 +1,23 @@
+Feature: Sample Calculator 
+Scenario: multiplication
+    Given Calculator is available
+    When someone entered 3 and 4
+    Then result must be 12
+    
+Scenario Outline: Calculator knows kerrat cetveli
+	Given Calculator is available
+	When someone tries to multiply  <param_1> with  <param_2>
+	Then check <param_3> is the output
+		
+		Examples:
+		| param_1 | param_2 | param_3 |
+		| 1 | 1 | 1 |
+		| 1 | 2 | 2 |
+		| 1 | 3 | 3 |
+		| 1 | 4 | 4 |
+		| 1 | 5 | 5 |
+		| 1 | 6 | 6 |
+		| 1 | 7 | 7 |
+		| 1 | 8 | 8 |
+		| 1 | 9 | 9 |
+		| 1 | 10 | 10 |
