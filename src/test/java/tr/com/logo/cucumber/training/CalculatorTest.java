@@ -24,7 +24,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(      
         features = "classpath:cucumber/calculator.features",
         glue="tr.com.logo.cucumber.glue.calculator")
-public class CucumberTest {
+public class CalculatorTest {
 
 	/**
 	 * @throws java.lang.Exception
